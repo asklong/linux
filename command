@@ -17,3 +17,10 @@ find -type l -delete [PATH]
 
 delete a softlink
 unlink – deletes a single specified file name including symbolic links.
+
+
+how to solve Permission denied
+在linux下执行sh文件时提示下面信息：
+-bash: ./xx.sh: Permission denied
+解决：
+chmod 777 xx.sh

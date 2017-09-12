@@ -24,3 +24,25 @@ how to solve Permission denied
 -bash: ./xx.sh: Permission denied
 解决：
 chmod 777 xx.sh
+
+linux check pid
+top
+
+
+linux quit without save
+!q
+
+
+
+linux run process on background
+Execute the script with redirection
+$ nohup sh custom-script.sh > custom-out.log &
+Execute the script without redirection
+$ nohup sh custom-script.sh &
+
+
+
+get stand out put by pid
+You can get that process's standard file descriptors, e.g. stdout:
+tail -f /proc/<pid>/fd/1
+

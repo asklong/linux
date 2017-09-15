@@ -29,6 +29,10 @@ linux check pid
 top
 
 
+linux check gpu information:
+nvidia-smi
+
+
 linux quit without save
 !q
 

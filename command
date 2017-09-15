@@ -46,3 +46,5 @@ get stand out put by pid
 You can get that process's standard file descriptors, e.g. stdout:
 tail -f /proc/<pid>/fd/1
 
+get running python:
+ps -ef |grep python

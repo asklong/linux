@@ -61,3 +61,7 @@ split large file
 命令：split -l 300 large_file.txt new_file_prefix
 模式二：指定分割后文件大小
 split -b 10m server.log waynelog
+
+
+Linux check disk space with df command
+df -h

@@ -52,3 +52,12 @@ tail -f /proc/<pid>/fd/1
 
 get running python:
 ps -ef |grep python
+
+
+http://blog.sina.com.cn/s/blog_4dd4753901017jwj.html
+split large file
+模式一：指定分割后文件行数
+对与txt文本文件，可以通过指定分割后文件的行数来进行文件分割。
+命令：split -l 300 large_file.txt new_file_prefix
+模式二：指定分割后文件大小
+split -b 10m server.log waynelog

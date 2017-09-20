@@ -29,6 +29,11 @@ linux check pid
 top
 
 
+linux copy folder
+cp -R source destination/
+
+
+
 linux check gpu information:
 nvidia-smi
 

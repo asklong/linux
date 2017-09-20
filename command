@@ -38,6 +38,12 @@ linux quit without save
 
 
 
+Linux uses the mv (move) command to rename for either a directory (folder) or a file.
+mv old_folder_name new_folder_name
+
+
+
+
 linux run process on background
 Execute the script with redirection
 $ nohup sh custom-script.sh > custom-out.log &

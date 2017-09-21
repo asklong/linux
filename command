@@ -40,11 +40,11 @@ nvidia-smi
 go to another machine
 #!/usr/bin/expect
 set timeout 30
-spawn ssh admin@172.20.190.45
-expect "admin@172.20.190.45's password:"
-send "0okm(IJN\r"
+spawn ssh admin@XX.XX.XX.XX
+expect "admin@XX.XX.XX.XX's password:"
+send "your password\r"
 sleep 0.2
-send "source kejin\r"
+send "source XX\r"
 sleep 0.2
 send "cd\r"
 interact

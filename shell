@@ -3,3 +3,27 @@ for i in {1..5}
 do
    echo "Welcome $i times"
 done
+
+
+function get_sku_id_in_each_day {
+    SAVE_PATH=$2
+    hadoop fs -test -e $SAVE_PATH
+    if [ $? -eq 0 ];then
+         hadoop fs -rmr ${SAVE_PATH}
+    fi
+    hadoop fs -mkdir ${SAVE_PATH}
+    for i in {0..-1}
+    do
+        j=$[-1*${i}]
+        day=`date -d "${i} days ago" +%Y-%m-%d`
+        if [ $i -lt 10 ]; then
+            sku_input="/user/part-0000${j}"
+            sku_output="/user/${day}"
+            echo ${sku_input}
+            echo ${sku_output}
+        fi
+        hadoop fs -mkdir ${sku_output}
+        hadoop fs -cp ${sku_input} ${sku_output}
+    done
+}
+   

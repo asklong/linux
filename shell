@@ -27,3 +27,10 @@ function get_sku_id_in_each_day {
     done
 }
    
+
+[root@showsky ~]# date -d "4 days ago" +%Y%m%d
+20100103
+上面是四天前的日期
+[root@showsky ~]# date -d "-1 days ago" +%Y%m%d
+20100108
+上面是一天后的日期

@@ -88,3 +88,12 @@ split -b 10m server.log waynelog
 
 Linux check disk space with df command
 df -h
+
+
+添加定时任务【推荐】
+Step-One : 编辑任务脚本【分目录存放】【ex: backup.sh】
+Step-Two : 编辑定时文件【命名规则:backup.cron】
+Step-Three : crontab命令添加到系统crontab backup.cron
+Step-Four : 查看crontab列表 crontab -l
+# 每天早上6点 
+0 6 * * * echo "Good morning." >> /tmp/test.txt //注意单纯echo，从屏幕上看不到任何输出，因为cron把任何输出都email到root的信箱了。

@@ -96,4 +96,4 @@ Step-Two : 编辑定时文件【命名规则:backup.cron】
 Step-Three : crontab命令添加到系统crontab backup.cron
 Step-Four : 查看crontab列表 crontab -l
 # 每天早上6点 
-0 6 * * * echo "Good morning." >> /tmp/test.txt //注意单纯echo，从屏幕上看不到任何输出，因为cron把任何输出都email到root的信箱了。
+00 06 * * * sh /home/ke.jin/gen_pair_data_test/script/pre_sku/process_sku_data.sh

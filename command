@@ -95,5 +95,6 @@ Step-One : 编辑任务脚本【分目录存放】【ex: backup.sh】
 Step-Two : 编辑定时文件【命名规则:backup.cron】
 Step-Three : crontab命令添加到系统crontab backup.cron
 Step-Four : 查看crontab列表 crontab -l
+crontab -e: edit your schedule
 # 每天早上6点 
 00 06 * * * sh /home/ke.jin/gen_pair_data_test/script/pre_sku/process_sku_data.sh

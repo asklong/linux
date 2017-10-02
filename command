@@ -98,3 +98,9 @@ Step-Four : 查看crontab列表 crontab -l
 crontab -e: edit your schedule
 # 每天早上6点 
 00 06 * * * sh /home/ke.jin/gen_pair_data_test/script/pre_sku/process_sku_data.sh
+47 * * * *  /bin/sh /data0/home/ke.jin/gen_pair_data_test/script/pre_sku/test.sh > /home/ke.jin/gen_pair_data_test/script/pre_sku/test.log &
+use absolute path
+in the shell script, we add two lines:
+#!/bin/bash
+source /etc/profile
+

@@ -104,3 +104,6 @@ in the shell script, we add two lines:
 #!/bin/bash
 source /etc/profile
 
+how to debug crontab:
+tail -f /var/log/cron
+run this command, you will get the bug information you run your schedule task.

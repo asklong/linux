@@ -110,3 +110,9 @@ run this command, you will get the bug information you run your schedule task.
 
 If you see that the script executes normal on terminal, and fails when you execute through the cron, 
 then the problem might be mostly because of the environmental differences between the terminal and cron env.
+http://blog.mojijs.com/post/172.html
+#!/bin/bash
+
+source $HOME/.bash_profile
+
+some_other_cmd

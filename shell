@@ -40,3 +40,7 @@ comments:
 :<<\EOF
 your code here
 EOF
+
+
+check system time
+var=`date "+%Y-%m-%d %H:%M:%S"` 

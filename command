@@ -107,3 +107,6 @@ source /etc/profile
 how to debug crontab:
 tail -f /var/log/cron
 run this command, you will get the bug information you run your schedule task.
+
+If you see that the script executes normal on terminal, and fails when you execute through the cron, 
+then the problem might be mostly because of the environmental differences between the terminal and cron env.

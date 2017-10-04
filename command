@@ -114,3 +114,10 @@ http://blog.mojijs.com/post/172.html
 source $HOME/.bash_profile
 
 some_other_cmd
+
+
+
+
+
+search keyword in vi:
+To find a word in Vi/Vim, simply type the / or ? key, followed by the word you're searching for. 

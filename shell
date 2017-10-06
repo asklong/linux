@@ -44,3 +44,11 @@ EOF
 
 check system time
 var=`date "+%Y-%m-%d %H:%M:%S"` 
+
+
+check path exist or not:
+hadoop fs -test -e ${SAVE_PATH}
+ if [ $? -eq 0 ]
+ then
+     hadoop fs -rmr ${SAVE_PATH}
+ fi

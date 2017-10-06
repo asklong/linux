@@ -121,3 +121,7 @@ some_other_cmd
 
 search keyword in vi:
 To find a word in Vi/Vim, simply type the / or ? key, followed by the word you're searching for. 
+
+
+check coding type for a file:
+int vi type :set fileencoding

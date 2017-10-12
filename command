@@ -115,6 +115,8 @@ source $HOME/.bash_profile
 
 some_other_cmd
 
+the path in all file should be absolute path.
+
 
 
 

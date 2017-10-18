@@ -127,3 +127,6 @@ To find a word in Vi/Vim, simply type the / or ? key, followed by the word you'r
 
 check coding type for a file:
 int vi type :set fileencoding
+
+undo last change (can be repeated to undo preceding commands) 
+in vi use: u

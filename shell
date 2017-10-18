@@ -36,12 +36,6 @@ function get_sku_id_in_each_day {
 上面是一天后的日期
 
 
-comments:
-:<<\EOF
-your code here
-EOF
-
-
 check system time
 var=`date "+%Y-%m-%d %H:%M:%S"` 
 
@@ -52,3 +46,15 @@ hadoop fs -test -e ${SAVE_PATH}
  then
      hadoop fs -rmr ${SAVE_PATH}
  fi
+
+
+shh to other linux machine and execute the command:
+#!/usr/bin/expect
+set timeout 30
+spawn ssh admin@172.20.XXX.XX
+expect "admin@172.20.XXX.XX's password:"
+send "password\r"
+sleep 0.2
+send "cd mypath/directory/sub\n"
+sleep 0.2
+interact

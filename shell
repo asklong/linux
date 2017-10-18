@@ -48,7 +48,7 @@ hadoop fs -test -e ${SAVE_PATH}
  fi
 
 
-shh to other linux machine and execute the command:
+shh to other linux machine and execute the command: run the t.sh in machine 172.20.XXX.XX
 #!/usr/bin/expect
 set timeout 30
 spawn ssh admin@172.20.XXX.XX
@@ -56,5 +56,6 @@ expect "admin@172.20.XXX.XX's password:"
 send "password\r"
 sleep 0.2
 send "cd mypath/directory/sub\n"
+send "./t.sh\n"
 sleep 0.2
 interact

@@ -59,3 +59,18 @@ send "cd mypath/directory/sub\n"
 send "./t.sh\n"
 sleep 0.2
 interact
+
+
+
+check the partation exist or not:
+function check_partition(){
+   #table,dt
+   temp=`hive -e "show partitions $1"`
+   echo $temp|grep -wq "$2"
+   if [ $? -eq 0 ];then
+       echo "ok"
+       return 0
+    else
+       return 1
+    fi  
+}

@@ -130,3 +130,7 @@ int vi type :set fileencoding
 
 undo last change (can be repeated to undo preceding commands) 
 in vi use: u
+
+
+copy folder from one machine to another remote machine:
+ scp -r multi-task_cnn_pairwise_224 admin@172.XXX.XXX.XX:/home/admin/

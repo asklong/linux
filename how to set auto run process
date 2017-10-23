@@ -1,0 +1,17 @@
+1. set a shell to run:
+#!/bin/bash
+
+source $HOME/.bash_profile
+function generate_skuids {
+#your code to run
+}
+
+2. in another shell we invoke the shell from previous step:
+#!/bin/bash
+source /etc/profile
+
+. /data0/home/ke.jin/gen_pair_data_test/script/pre_sku/generate_skuids.sh
+function run {
+#your code to run
+}
+run

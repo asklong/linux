@@ -134,3 +134,9 @@ in vi use: u
 
 copy folder from one machine to another remote machine:
  scp -r multi-task_cnn_pairwise_224 admin@172.XXX.XXX.XX:/home/admin/
+
+
+
+remove file in .trash
+在linux系统，执行rm命令并不能彻底删除文件，而是把被删除的文件移动到了.trash文件夹，这些文件还是占用磁盘空间，如果想释放磁盘空间，就需要把.trash下的文件再执行rm命令，以达到彻底删除的目的。
+       例如：linux下面/export目录下的被删除文件移动了，其下.trash文件夹，cd /export/.trash  ==> /bin/rm 文件名

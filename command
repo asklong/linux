@@ -142,7 +142,8 @@ remove file in .trash
        例如：linux下面/export目录下的被删除文件移动了，其下.trash文件夹，cd /export/.trash  ==> /bin/rm 文件名 or /bin/rm -rf 
 Hadoop fs 清空回收站
 hdfs dfs -expunge
-
+delete hdfs forever :
+hdfs dfs -rm -skipTrash /path/to/file/you/want/to/remove/permanently
 
 merge files in linux
 cat text_2009* >newfile

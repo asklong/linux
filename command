@@ -143,7 +143,7 @@ remove file in .trash
 Hadoop fs 清空回收站
 hdfs dfs -expunge
 delete hdfs forever :
-hdfs dfs -rm -skipTrash /path/to/file/you/want/to/remove/permanently
+hdfs dfs -rmr -skipTrash /path/to/file/you/want/to/remove/permanently
 
 merge files in linux
 cat text_2009* >newfile

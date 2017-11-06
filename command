@@ -147,3 +147,7 @@ hdfs dfs -rmr -skipTrash /path/to/file/you/want/to/remove/permanently
 
 merge files in linux
 cat text_2009* >newfile
+
+
+git Please make sure you have the correct access rights and the repository exists
+http://blog.csdn.net/jingtingfengguo/article/details/51892864

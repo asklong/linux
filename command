@@ -155,3 +155,7 @@ http://blog.csdn.net/jingtingfengguo/article/details/51892864
 
 get the disk space usage:
 du -k /your/path
+
+
+unzip file:
+unzip file.zip -d destination_folder

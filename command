@@ -159,3 +159,7 @@ du -k /your/path
 
 unzip file:
 unzip file.zip -d destination_folder
+
+
+copy file from server to local:
+scp ltx1-holdemgw03.grid.XXX.com:/export/home/dev_svc/apps/sa_rightnow/scripts/XXX.pig .
